@@ -117,8 +117,8 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # Load artifacts
 # ==============================
 
-model = load_model("model.h5")
-
+## model = load_model("model.h5")
+model = load_model("model.h5", m_format="keras")
 with open("tokenizer.pkl", "rb") as f:
     tokenizer = pickle.load(f)
 
