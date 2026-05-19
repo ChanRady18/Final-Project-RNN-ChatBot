@@ -4,6 +4,10 @@ import pickle
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
+
+import os
+os.environ["TF_USE_LEGACY_KERAS"] = "1"
+
 # ==============================
 # Load artifacts
 # ==============================
