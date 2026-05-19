@@ -10,7 +10,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 @st.cache_resource
 def load_artifacts():
-    model = load_model("model.h5")
+    model = load_model("model.keras")
     with open("tokenizer.pkl", "rb") as f:
         tokenizer = pickle.load(f)
     with open("config.pkl", "rb") as f:
