@@ -242,10 +242,10 @@ st.markdown("""
 # ─── Load Artifacts ───────────────────────────────────────────────────────────
 @st.cache_resource
 def load_artifacts():
-    model = load_model("model.h5")
-    with open("tokenizer.pkl", "rb") as f:
+    model = load_model("model_v2.h5")
+    with open("tokenizer_v2.pkl", "rb") as f:
         tokenizer = pickle.load(f)
-    with open("config.pkl", "rb") as f:
+    with open("config_v2.pkl", "rb") as f:
         config = pickle.load(f)
     return model, tokenizer, config["max_len"], config["id_to_answer"]
 
