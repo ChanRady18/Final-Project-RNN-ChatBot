@@ -118,11 +118,11 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # ==============================
 
 ## model = load_model("model.h5")
-model = load_model("model.h5")
-with open("tokenizer.pkl", "rb") as f:
+model = load_model("model_v2.h5")
+with open("tokenizer_v2.pkl", "rb") as f:
     tokenizer = pickle.load(f)
 
-with open("config.pkl", "rb") as f:
+with open("config_v2.pkl", "rb") as f:
     config = pickle.load(f)
 
 max_len = config["max_len"]
