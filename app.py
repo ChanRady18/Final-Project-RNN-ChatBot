@@ -220,8 +220,7 @@ else:
         else:
             conf_pct = f"{msg['conf']:.0%}"
             st.markdown(
-                f"<div class='bot-bubble'>🤖 {msg['text']}"
-                f"<div class='conf-tag'>confidence: {conf_pct}</div></div>",
+                f"<div class='bot-bubble'>🤖 {msg['text']}",
                 unsafe_allow_html=True
             )
 
